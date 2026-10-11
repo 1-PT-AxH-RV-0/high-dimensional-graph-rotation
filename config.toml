@@ -1,35 +1,51 @@
 [[graphs]]
-type = "Text"
-text = "P"
-font_path = "/storage/emulated/0/下载/ws.git/unicode快闪/Sarasa-Mono-SC-Regular.ttf"
-elevations = [
-  { type = 'cylindrify', height = 0.1 }
-]
-# type = "CantellatedRegularPolyhedron"
-# name = "cantellated_dodecahedron"
+type = "RegularStarPolychora"
+name = "great_grand_stellated_hecatonicosachoron"
 id = "g1"
 
 [video]
 width = 1080
 height = 1080
+end_pause_frames = 0
 
 [drawing]
-scale = 250
-line_width = 1
+scale = 700
+line_width = 2
 line_color = [230, 230, 230]
 background_color = [20, 20, 20]
-focal_length = 5
-
-[[initial]]
-rotations = [
-    { plane = [0, 2], angle = 45 }
-]
-target = "g1"
+focal_length = 10
 
 [[actions]]
 type = "rotate"
-plane = [0, 2]
+start = 30
+target = "g1"
+duration = 120
 angle = 360
-duration = 180
-start = 0
-target = 'g1'
+plane = [0, 2]
+
+[[actions]]
+type = "rotate"
+start = 170
+target = "g1"
+duration = 120
+angle = 360
+plane = [1, 3]
+
+[[actions]]
+type = "rotate"
+start = 170
+target = "g1"
+duration = 120
+angle = 360
+plane = [1, 3]
+
+
+[[actions]]
+type = "rotate_complexly"
+start = 310
+target = "g1"
+rotations = [
+  { duration = 240, angle = 360, plane = [2, 3] },
+  { duration = 120, angle = 360, plane = [0, 2] }
+]
+

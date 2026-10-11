@@ -141,7 +141,7 @@ def generate_regular_star_polygon(n, k):
     return vertices, edges
 
 
-# 单纯形
+# 正单形
 def generate_simplex(d):
     n = d + 1
     r_squared = d / (2 * (d + 1))
